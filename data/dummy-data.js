@@ -21,7 +21,7 @@ export const MEALS = [
     "Spaghetti with Tomato Sauce",
     "affordable",
     "simple",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg",
+    "https://api.photon.aremedia.net.au/wp-content/uploads/sites/4/2023/06/14/33573/AAWF-Hero-Site-88.png?w=1228",
     20,
     [
       "4 Tomatoes",

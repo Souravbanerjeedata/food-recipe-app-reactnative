@@ -1,11 +1,78 @@
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Platform,
+} from "react-native";
 
-export default function MealItem({ title }) {
-  return (  
-    <View>
-      <Text>{title}</Text>
+export default function MealItem({
+  title,
+  imageUrl,
+  affordability,
+  complexity,
+  duration,
+}) {
+  return (
+    <View style={styles.mealItem}>
+      <Pressable
+        android_ripple={{ color: "#ccc" }}
+        style={({ pressed }) => (pressed ? styles.buttonPressed : null)}
+      >
+        <View style={styles.innerContainer}>
+          <View>
+            <Image source={{ uri: imageUrl }} style={styles.image} />
+            <Text style={styles.title}>{title}</Text>
+          </View>
+          <View style={styles.details}>
+            <Text style={styles.detailItem}>{duration}</Text>
+            <Text style={styles.detailItem}>{complexity}</Text>
+            <Text style={styles.detailItem}>{affordability}</Text>
+          </View>
+        </View>
+      </Pressable>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  mealItem: {
+    margin: 16,
+    borderRadius: 10,
+    overflow: Platform.OS === "android" ? "hidden" : "visible",
+    backgroundColor: "white",
+    elevation: 4,
+    shadowColor: "black",
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    shadowOffset: { height: 0, width: 0 },
+  },
+  innerContainer: {
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  buttonPressed: {
+    opacity: 0.5,
+  },
+  image: {
+    width: "100%",
+    height: 200,
+  },
+  title: {
+    fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 18,
+    margin: 6,
+  },
+  details: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 8,
+  },
+  detailItem: {
+    marginHorizontal: 4,
+    fontSize: 12,
+  },
+});
