@@ -26,7 +26,7 @@ export default function MealItem({
             <Text style={styles.title}>{title}</Text>
           </View>
           <View style={styles.details}>
-            <Text style={styles.detailItem}>{duration}</Text>
+            <Text style={styles.detailItem}>{duration}m</Text>
             <Text style={styles.detailItem}>{complexity}</Text>
             <Text style={styles.detailItem}>{affordability}</Text>
           </View>
