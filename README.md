@@ -1,25 +1,125 @@
-﻿<div align="center">
-    <img src="public/readme/hero.png" alt="Project Banner">
-  <h3 align="center">Guees My Number Game</h3>
-</div>
+# 🍲 Food Recipe App (React Native)
 
-## <a name="introduction">🤖 Introduction</a>
+A mobile food‑recipe app built with **React Native** that lets users discover, browse, and save recipes right from their phones. Great for exploring new dishes and storing your favorite cooking ideas.
 
-A game to guess a number.
+---
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## 📱 Features
 
-- **[React](https://react.dev/)** is a declarative JavaScript library for building interactive UIs. It provides the component structure for modular development, allowing smooth integration of GSAP animations, reusable logic for scroll behavior, and support for responsive layout and state-driven UI features like carousels and video sections.
+- Browse recipes with a clean, scrollable list
+- View detailed recipe pages (ingredients + steps)
+- Search recipes by name or category
+- Save favorite recipes (using local storage or context)
+- Light/dark theme support (optional, if implemented)
+- Smooth navigation powered by `@react-navigation`
 
-- **[React Native](https://reactnative.dev/)** brings the best parts of developing with React to native development.It's a best-in-class JavaScript library for building user interfaces.Create native apps for Android, iOS, and more using React.
+---
 
-- **[Expo](https://expo.dev/)** is a full-stack React Native framework with powerful cloud services to help you move faster at every stage of the app lifecycle.
+## 🛠 Tech stack
+
+- **Frontend:** React Native (Expo or vanilla)
+- **Navigation:** `@react-navigation/native` + `@react-navigation/stack`
+- **State management:** `React Context` or `Redux` (adjust as per your code)
+- **Styling:** `styled-components` or plain `StyleSheet` (update as used)
+- **Icons:** `react-native-vector-icons` (if used)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- React Native / Expo CLI installed
+- A physical device or emulator with Android/iOS
+
+### Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Souravbanerjeedata/food-recipe-app-reactnative.git
+   cd food-recipe-app-reactnative
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run on Android:
+   ```bash
+   npx react-native run-android
+   ```
+
+4. Or run on iOS (if supported):
+   ```bash
+   npx react-native run-ios
+   ```
+
+5. If using **Expo**:
+   ```bash
+   npm start
+   # Then choose Android/iOS in the Expo CLI
+   ```
+
+---
+
+## 📁 Project structure (example)
+
+Adapt this to match your actual folder structure:
+
+```text
+.
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── screens/         # Individual screens
+│   ├── navigation/      # App navigator setup
+│   ├── data/            # Local recipe data or API module
+│   └── styles/          # Global styles
+├── App.js               # Main app entry
+└── README.md            # This file
+```
+
+---
+
+## 📷 Screenshots
+
+*(You can add this section later by uploading screenshots to a `screenshots/` folder and linking them in README.)*
+
+Example:
+
+```markdown
 
 
-<!-- 👉 **Modal Animation**: Opening and closing Modal with presseing just one button.
+```
 
-👉 **Add Goals**: Goals added instantly with tab of a button.
+---
 
-👉 **Delete Goals**: Delete them when done by just clicking on the goals. -->
+## 🤝 Contributing
 
-</div>
+Contributions are welcome!
+
+1. Fork the repo.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/new-screen
+   ```
+3. Commit and push your changes.
+4. Open a pull request with a clear description.
+
+---
+
+## 📄 License
+
+This project is open‑source and available under the [MIT License](LICENSE).
+
+---
+
+## 📮 Contact
+
+- **GitHub:** [Souravbanerjeedata](https://github.com/Souravbanerjeedata)
+- **Email / LinkedIn:** [customize with your contact info]
+
+Built with :heart: for food lovers and coding enthusiasts.
